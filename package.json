@@ -1,0 +1,46 @@
+{
+  "name": "vitest-blueprint",
+  "version": "1.0.0",
+  "description": "ember-cli blueprint for generating vitest projects",
+  "keywords": [
+    "ember-blueprint",
+    "vite",
+    "vitest"
+  ],
+  "files": [
+    "index.js",
+    "files"
+  ],
+  "repository": "https://github.com/NullVoxPopuli/vitest-blueprint",
+  "license": "MIT",
+  "author": "NullVoxPopuli",
+  "main": "index.js",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "semantic-release": "^19.0.3"
+  },
+  "engines": {
+    "node": "12.* || >= 14"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      "@semantic-release/git"
+    ]
+  },
+  "volta": {
+    "node": "16.16.0",
+    "yarn": "1.22.19"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
